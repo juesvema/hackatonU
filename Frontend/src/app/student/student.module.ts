@@ -19,7 +19,6 @@ import { MdTabsModule,
     CommonModule,
     MdTabsModule,
     MdSelectModule,
-    MdButtonModule,
     MdButtonToggleModule,
     MaterialModule
   ],
