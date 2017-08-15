@@ -11,12 +11,21 @@ var LocalStrategy = require('passport-local').Strategy;
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
 
+<<<<<<< HEAD
 mongoose.connect('mongodb://localhost/hackatonHOU');
+=======
+mongoose.connect('mongodb://localhost/hackatonU');
+>>>>>>> bdaa7c06a5415067987c226c5b5f17ddc009c823
 var db = mongoose.connection;
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
+<<<<<<< HEAD
 var products = require('./routes/products');
+=======
+var categorias = require('./routes/categorias');
+var bitacora = require('./routes/bitacora');
+>>>>>>> bdaa7c06a5415067987c226c5b5f17ddc009c823
 
 // Init App
 var app = express();
@@ -79,7 +88,12 @@ app.use(function (req, res, next) {
 
 app.use('/', routes);
 app.use('/users', users);
+<<<<<<< HEAD
 app.use('/', products);
+=======
+app.use('/categorias', categorias);
+app.use('/bitacora', bitacora);
+>>>>>>> bdaa7c06a5415067987c226c5b5f17ddc009c823
 
 // Set Port
 app.set('port', (process.env.PORT || 3000));
