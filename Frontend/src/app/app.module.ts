@@ -1,4 +1,3 @@
-import { MdTabsModule } from '@angular/material';
 import { PresentationComponent } from './student/presentation/presentation.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -10,13 +9,12 @@ import { AppComponent } from './app.component';
 @NgModule({
   declarations: [
     AppComponent,
-    PresentationComponent,
-    MdTabsModule
+    PresentationComponent    
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
