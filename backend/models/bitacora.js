@@ -28,9 +28,6 @@ var Bitacora_schema = mongoose.Schema({
 	reflexion: {
 		type: String	
 	},
-	product_id: {
-		type: Schema.Types.ObjectId, ref: "Product"	
-	},
 	user_id: {
 		type: Schema.Types.ObjectId, ref: "User"		
 	}

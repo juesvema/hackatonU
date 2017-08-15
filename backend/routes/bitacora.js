@@ -3,8 +3,6 @@ var router = express.Router();
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var Bitacora = require('../models/bitacora');
-var Product = require('../models/product');
-var User = require('../models/user');
 
 router.route("/bitacora")
 .get(function(req,res) {
@@ -15,8 +13,7 @@ router.route("/bitacora")
 	});
 })
 
-.post(function(req, res){
-	
+.post(function(req,res){
 	var preparacion = req.body.preparacion;
 	var riego = req.body.riego;
 	var desmalezado = req.body.desmalezado;
@@ -25,6 +22,7 @@ router.route("/bitacora")
 	var clima = req.body.clima;
 	var fotografias = req.body.fotografias;
 	var reflexion = req.body.reflexion;
+	var user_id = res.locals.user._id;
 
 	var newBitacora = new Bitacora({
 		preparacion: preparacion,
@@ -35,6 +33,7 @@ router.route("/bitacora")
 		clima: clima,
 		fotografias: fotografias,
 		reflexion: reflexion,
+		user_id : user_id
 	});	
 	Bitacora.createBitacora(newBitacora, function(err, bitacora){
 		if(err) throw err;
@@ -55,10 +54,11 @@ router.route('/bitacora/:_id')
         if (req.body.clima) user.clima = req.body.clima;
         if (req.body.fotografias) user.fotografias = req.body.fotografias;
         if (req.body.reflexion) user.reflexion = req.body.reflexion;
+        if (req.body.user_id) user.user_id = req.body.user_id;
 
         user.save( function (err){
             if (err) send (err);
-            res.json({message: 'Bitacora updated'});
+            res.json({message: 'User updated'});
         });
     });
 })
