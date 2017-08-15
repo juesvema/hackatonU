@@ -1,3 +1,4 @@
+import { ChoiceProductComponent } from './student/choice-product/choice-product.component';
 import { PresentationComponent } from './student/presentation/presentation.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -10,7 +11,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
-    PresentationComponent    
+    PresentationComponent,
+    ChoiceProductComponent    
   ],
   imports: [
     BrowserModule,
