@@ -1,5 +1,5 @@
 <div class="wrapper">
-  <h2>Semana 1</h2>
+  <h2>Semana {{ week }}</h2>
 
   <md-input-container>
     <textarea mdInput placeholder="Plagas" value=""></textarea>
@@ -9,7 +9,7 @@
     <textarea mdInput placeholder="Crecimiento" value=""></textarea>
   </md-input-container>
 
-  <md-input-container>
+  <md-input-container class="eventos-climaticos">
     <textarea mdInput placeholder="Eventos Climáticos" value=""></textarea>
   </md-input-container>
 </div>
@@ -22,35 +22,35 @@
       <th>Abono</th>
     </tr>
     <tr>
-      <td><md-checkbox class="example-margin" [(ngModel)]="checked" ngDefaultControl>Lunes</md-checkbox></td>
-      <td><md-checkbox class="example-margin" [(ngModel)]="checked" ngDefaultControl>Lunes</md-checkbox></td>
-      <td><md-checkbox class="example-margin" [(ngModel)]="checked" ngDefaultControl>Lunes</md-checkbox></td>
+      <td><md-checkbox class="example-margin" [(ngModel)]="mondayRiego" ngDefaultControl>Lunes</md-checkbox></td>
+      <td><md-checkbox class="example-margin" [(ngModel)]="mondayDesmalezado" ngDefaultControl>Lunes</md-checkbox></td>
+      <td><md-checkbox class="example-margin" [(ngModel)]="mondayAbono" ngDefaultControl>Lunes</md-checkbox></td>
     </tr>
     <tr>
-      <td><md-checkbox class="example-margin" [(ngModel)]="checked" ngDefaultControl>Martes</md-checkbox></td>
-      <td><md-checkbox class="example-margin" [(ngModel)]="checked" ngDefaultControl>Martes</md-checkbox></td>
-      <td><md-checkbox class="example-margin" [(ngModel)]="checked" ngDefaultControl>Martes</md-checkbox></td>
+      <td><md-checkbox class="example-margin" [(ngModel)]="tuesdayRiego" ngDefaultControl>Martes</md-checkbox></td>
+      <td><md-checkbox class="example-margin" [(ngModel)]="tuesdayDesmalezado" ngDefaultControl>Martes</md-checkbox></td>
+      <td><md-checkbox class="example-margin" [(ngModel)]="tuesdayAbono" ngDefaultControl>Martes</md-checkbox></td>
     </tr>
     <tr>
-      <td><md-checkbox class="example-margin" [(ngModel)]="checked" ngDefaultControl>Miercoles</md-checkbox></td>
-      <td><md-checkbox class="example-margin" [(ngModel)]="checked" ngDefaultControl>Miercoles</md-checkbox></td>
-      <td><md-checkbox class="example-margin" [(ngModel)]="checked" ngDefaultControl>Miercoles</md-checkbox></td>
+      <td><md-checkbox class="example-margin" [(ngModel)]="wednesdayRiego" ngDefaultControl>Miercoles</md-checkbox></td>
+      <td><md-checkbox class="example-margin" [(ngModel)]="wednesdayDesmalezado" ngDefaultControl>Miercoles</md-checkbox></td>
+      <td><md-checkbox class="example-margin" [(ngModel)]="wednesdayAbono" ngDefaultControl>Miercoles</md-checkbox></td>
     </tr>
     <tr>
-      <td><md-checkbox class="example-margin" [(ngModel)]="checked" ngDefaultControl>Jueves</md-checkbox></td>
-      <td><md-checkbox class="example-margin" [(ngModel)]="checked" ngDefaultControl>Jueves</md-checkbox></td>
-      <td><md-checkbox class="example-margin" [(ngModel)]="checked" ngDefaultControl>Jueves</md-checkbox></td>
+      <td><md-checkbox class="example-margin" [(ngModel)]="thursdayRiego" ngDefaultControl>Jueves</md-checkbox></td>
+      <td><md-checkbox class="example-margin" [(ngModel)]="thursdayDesmalezado" ngDefaultControl>Jueves</md-checkbox></td>
+      <td><md-checkbox class="example-margin" [(ngModel)]="thursdayAbono" ngDefaultControl>Jueves</md-checkbox></td>
     </tr>
     <tr>
-      <td><md-checkbox class="example-margin" [(ngModel)]="checked" ngDefaultControl>Viernes</md-checkbox></td>
-      <td><md-checkbox class="example-margin" [(ngModel)]="checked" ngDefaultControl>Viernes</md-checkbox></td>
-      <td><md-checkbox class="example-margin" [(ngModel)]="checked" ngDefaultControl>Viernes</md-checkbox></td>
+      <td><md-checkbox class="example-margin" [(ngModel)]="fridayRiego" ngDefaultControl>Viernes</md-checkbox></td>
+      <td><md-checkbox class="example-margin" [(ngModel)]="fridayDesmalezado" ngDefaultControl>Viernes</md-checkbox></td>
+      <td><md-checkbox class="example-margin" [(ngModel)]="fridayAbono" ngDefaultControl>Viernes</md-checkbox></td>
     </tr>
   </table>
 </section>
 
 <div class="wrapper">
   <md-input-container>
-    <textarea mdInput placeholder="Nota" value=""></textarea>
+    <textarea mdInput placeholder="Observacion"></textarea>
   </md-input-container>
 </div>

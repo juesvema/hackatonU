@@ -2,17 +2,17 @@
   <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px">
       <div fxFlex>
           Selecciona producto: 
-          <md-select placeholder="Categoria">
-            <md-option *ngFor="let category of categories" [value]="category.id">
-              {{ category.name }}
+          <md-select placeholder="Producto 1">
+            <md-option *ngFor="let product of products" [value]="product.id">
+              {{ product.name }}
             </md-option>
           </md-select>  
       </div>
       <div fxFlex>
           Selecciona producto: 
-          <md-select placeholder="Categoria">
-            <md-option *ngFor="let category of categories" [value]="category.id">
-              {{ category.name }}
+          <md-select placeholder="Producto 2">
+            <md-option *ngFor="let product of products" [value]="product.id">
+              {{ product.name }}
             </md-option>
           </md-select> 
       </div>

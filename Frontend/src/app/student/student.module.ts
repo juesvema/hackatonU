@@ -12,7 +12,7 @@ import { MdTabsModule,
          MdButtonToggleModule,
          MaterialModule,
          MdDialog
-        } from '@angular/material';
+       } from '@angular/material';
 
 @NgModule({
   imports: [
@@ -27,7 +27,7 @@ import { MdTabsModule,
                   InformationComponent, 
                   BitacoraComponent, 
                   PresentationComponent
-                  ],
+                ],
   exports: [PresentationComponent],
   providers: [DialogService, ProductsService]
 })

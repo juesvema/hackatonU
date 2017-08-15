@@ -12,23 +12,23 @@ export class ChoiceProductComponent implements OnInit {
   /**
    * categories 
    */
-  private categories: object[];
+  private products: object[];
 
   constructor(public service:ProductsService) { }
 
+  /**
+   * iniialize vars
+   */
   ngOnInit() {
-    this.fillCategories();
+    this.fillProducts();
   }
 
-  fillCategories() {
-    this.categories = [ {id:1,'name':'name'},{id: 2, 'name':'name2'} ];
-    
+  /**
+   * fill products 
+   */
+  fillProducts() {
+    this.products = [ {id:1,'name':'name'},{id: 2, 'name':'name2'} ];
   }
 
-  fillCateg() {
-    this.service.getProducts(1).subscribe( (response: Response) => {
-      this.categories = response.json();
-    });
-  }
 
 }

@@ -33,7 +33,8 @@ export class BitacoraComponent implements OnInit {
    * go to week
    */
   public goWeek(week: number) {
-    this.dialogService.openDialog();
+    console.log(week);
+    this.dialogService.openDialog(week);
   }
 
 }
