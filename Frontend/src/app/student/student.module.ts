@@ -11,7 +11,7 @@ import { MdTabsModule,
          MdButtonModule, 
          MdButtonToggleModule,
          MaterialModule,
-         MdDialog 
+         MdDialog
         } from '@angular/material';
 
 @NgModule({

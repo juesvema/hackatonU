@@ -9,7 +9,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { MdTabsModule, MdCardModule, MdGridListModule } from '@angular/material';
+import { MdTabsModule, 
+         MdCardModule, 
+         MdGridListModule, 
+         MdInputModule,
+         MdCheckboxModule
+        } from '@angular/material';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from "@angular/flex-layout";
@@ -29,7 +34,9 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     MdTabsModule,
     MdCardModule,
     MdGridListModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MdInputModule,
+    MdCheckboxModule
   ],
   providers: [],
   entryComponents: [WeekInformationComponent],

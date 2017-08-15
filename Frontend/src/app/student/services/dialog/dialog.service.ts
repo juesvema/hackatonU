@@ -1,6 +1,6 @@
 import { WeekInformationComponent } from './../../week-information/week-information.component';
 import { Injectable } from '@angular/core';
-import { MdDialog } from '@angular/material';
+import { MdDialog, MdDialogConfig } from '@angular/material';
 
 @Injectable()
 export class DialogService {
@@ -8,7 +8,9 @@ export class DialogService {
   constructor(public dialog: MdDialog) { }
 
   openDialog() {
-      this.dialog.open(WeekInformationComponent);
+    let configuration: MdDialogConfig = new MdDialogConfig;
+    configuration.width = '600px';
+      this.dialog.open(WeekInformationComponent, configuration);
   }
 
 }
