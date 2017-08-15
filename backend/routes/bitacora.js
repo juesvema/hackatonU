@@ -21,26 +21,16 @@ router.route("/")
 })
 
 .post(function(req,res){
-	var preparacion = req.body.preparacion;
-	var riego = req.body.riego;
-	var desmalezado = req.body.desmalezado;
-	var plaga = req.body.plaga;
-	var crecimiento = req.body.crecimiento;
-	var clima = req.body.clima;
-	var fotografias = req.body.fotografias;
-	var reflexion = req.body.reflexion;
-	var user_id = res.locals.user._id;
-
 	var newBitacora = new Bitacora({
-		preparacion: preparacion,
-		riego:riego,
-		desmalezado: desmalezado,
-		plaga: plaga,
-		crecimiento: crecimiento,
-		clima: clima,
-		fotografias: fotografias,
-		reflexion: reflexion,
-		user_id : user_id
+		preparacion:  req.body.preparacion,
+		riego:req.body.riego,
+		desmalezado:  req.body.desmalezado,
+		plaga: req.body.plaga,
+		crecimiento: req.body.crecimiento,
+		clima:  req.body.clima,
+		fotografias: req.body.fotografias,
+		reflexion: req.body.reflexion,
+		user_id : res.locals.user._id
 	});	
 	Bitacora.createBitacora(newBitacora, function(err, bitacora){
 		if(err) throw err;
