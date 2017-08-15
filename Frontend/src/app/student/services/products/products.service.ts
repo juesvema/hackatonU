@@ -10,7 +10,12 @@ export class ProductsService {
    * get products by category
    */
   getProducts(category: number) {
-    return this.http.get('urlProduct');
+    return this.http.get('http://localhost:3000/productos');
   }
+
+  getCategories(category: number) {
+    return this.http.get('http://localhost:3000/categorias');
+  }
+
 }
 
