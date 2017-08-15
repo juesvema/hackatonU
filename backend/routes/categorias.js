@@ -17,6 +17,7 @@ router.route("/")
 		{},function(err,categorias) {
 		if (err) {res.redirect("/");return;}
 		console.log(categorias)
+        res.send(categorias);
 	});
 })
 .post(function(req, res){
