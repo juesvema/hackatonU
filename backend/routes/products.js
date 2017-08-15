@@ -6,7 +6,7 @@ var LocalStrategy = require('passport-local').Strategy;
 var Product = require('../models/product');
 var Categoria = require('../models/categorias');
 
-
+//CRUD
 router.get("/new", function (req, res) {
 	Categoria.find({}, function (err, categorias) {
 		if (err) { res.redirect("/"); return; }
@@ -15,21 +15,22 @@ router.get("/new", function (req, res) {
 });
 
 //enable cors
-router.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
+router.use(function (req, res, next) {
+	res.header("Access-Control-Allow-Origin", "*");
+	res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+	next();
 });
 
 // 
 router.route("/")
+	//Show register
 	.get(function (req, res) {
 		Product.find({}, function (err, products) {
 			if (err) { res.redirect("/"); return; }
 			res.send(products)
 		});
 	})
-
+	//Create register
 	.post(function (req, res) {
 		var newProduct = new Product({
 			title: req.body.title,
@@ -55,6 +56,7 @@ router.route("/:id")
 			});
 		});
 	})
+	//Delete register
 	.delete(function (req, res) {
 		Product.findOneAndRemove({ _id: req.params.id }, function (err) {
 			if (!err) {
