@@ -5,6 +5,14 @@ var LocalStrategy = require('passport-local').Strategy;
 
 var Product = require('../models/product');
 
+
+//enable cors
+router.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 // 
 router.route("/")
 .get(function(req,res) {
@@ -28,7 +36,7 @@ router.route("/")
 		});
 })
 
-router.route("/productos/:id")
+router.route("/:id")
 .get(function(req,res) {
 	res.render("/productos/show")
 })

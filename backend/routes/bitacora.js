@@ -4,7 +4,7 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var Bitacora = require('../models/bitacora');
 
-router.route("/bitacora")
+router.route("/")
 .get(function(req,res) {
 	Bitacora.find({},function(err,bitacoras) {
 		if (err) {res.redirect("/");return;}
@@ -41,7 +41,7 @@ router.route("/bitacora")
 	});
 });
 
-router.route('/bitacora/:_id')
+router.route('/:_id')
 .put( function (req, res) {
     Bitacora.findById(req.params._id, function (err, user) {
         if (err) res.send(err);
