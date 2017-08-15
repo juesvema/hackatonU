@@ -1,3 +1,26 @@
-<p>
-  choice-product works!
-</p>
+<md-card>
+  <div class="container" fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px">
+      <div fxFlex>
+          Selecciona producto: 
+          <md-select placeholder="Categoria">
+            <md-option *ngFor="let category of categories" [value]="category.id">
+              {{ category.name }}
+            </md-option>
+          </md-select>  
+      </div>
+      <div fxFlex>
+          Selecciona producto: 
+          <md-select placeholder="Categoria">
+            <md-option *ngFor="let category of categories" [value]="category.id">
+              {{ category.name }}
+            </md-option>
+          </md-select> 
+      </div>
+  </div>
+
+  <div class="container save" fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px">
+      <div fxFlex>
+          <button md-raised-button>Guardar</button>
+      </div>
+  </div>
+</md-card>

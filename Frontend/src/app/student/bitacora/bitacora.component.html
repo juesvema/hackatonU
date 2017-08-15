@@ -1,3 +1,7 @@
-<p>
-  bitacora works!
-</p>
+<div fxLayout="row" fxLayoutWrap>
+    <div *ngFor="let week of weeks; let index = index" fxFlex>
+        <button md-raised-button class="button-week" (click)="goWeek(index + 1)">
+            Semana {{index + 1}}
+        </button>
+    </div>
+</div>

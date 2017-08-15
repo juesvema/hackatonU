@@ -1,3 +1,4 @@
+import { DialogService } from './../services/dialog/dialog.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BitacoraComponent implements OnInit {
 
-  constructor() { }
+  /**
+   * weeks
+   */
+  private weeks: number[];
+
+  constructor(public dialogService: DialogService) { }
 
   ngOnInit() {
+    this.fillWeeks();
+  }
+
+  /**
+   * fill weeks var
+   */
+  private fillWeeks() {
+    this.weeks = [];
+    for (let i = 0; i< 16; i++) {
+      this.weeks.push(i + 1);
+    }
+  }
+
+  /**
+   * go to week
+   */
+  public goWeek(week: number) {
+    this.dialogService.openDialog();
   }
 
 }
