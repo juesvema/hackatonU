@@ -36,7 +36,7 @@ router.route("/productos/:id")
     Product.findById(req.params.id, function (err, product) {
         if (err) res.send(err);
         if (req.body.title) product.title = req.body.title;
-		if (req.body.category_id) user.category_id = req.body.category_id;
+		if (req.body.category_id) product.category_id = req.body.category_id;
         product.save( function (err){
             if (err) send (err);
             res.json({message: 'Product updated'});
