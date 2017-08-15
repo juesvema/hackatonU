@@ -9,4 +9,6 @@ var Categorias = mongoose.Schema({
 
 var Categoria = module.exports = mongoose.model('Categoria', Categorias);
 
-module.exports = Categoria;
+module.exports.createCategoria = function(newProduct, callback){
+      newProduct.save(callback);
+}

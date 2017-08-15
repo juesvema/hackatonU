@@ -4,7 +4,14 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var Bitacora = require('../models/bitacora');
 
-router.route("/bitacora")
+//enable cors
+router.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
+router.route("/")
 .get(function(req,res) {
 	Bitacora.find({},function(err,bitacoras) {
 		if (err) {res.redirect("/");return;}
@@ -41,7 +48,7 @@ router.route("/bitacora")
 	});
 });
 
-router.route('/bitacora/:_id')
+router.route('/:_id')
 .put( function (req, res) {
     Bitacora.findById(req.params._id, function (err, user) {
         if (err) res.send(err);
