@@ -4,6 +4,13 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var Bitacora = require('../models/bitacora');
 
+//enable cors
+router.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 router.route("/")
 .get(function(req,res) {
 	Bitacora.find({},function(err,bitacoras) {
