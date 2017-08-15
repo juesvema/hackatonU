@@ -1,3 +1,5 @@
+import { MainLoginComponent } from './login/main-login/main-login.component';
+import { LoginModule } from './login/login.module';
 import { WeekInformationComponent } from './student/week-information/week-information.component';
 import { StudentModule } from './student/student.module';
 import { BitacoraComponent } from './student/bitacora/bitacora.component';
@@ -12,7 +14,8 @@ import { MdTabsModule,
          MdCardModule, 
          MdGridListModule, 
          MdInputModule,
-         MdCheckboxModule
+         MdCheckboxModule,
+         MdButtonModule
        } from '@angular/material';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -22,23 +25,27 @@ import { FlexLayoutModule } from "@angular/flex-layout";
   declarations: [
     AppComponent,
     WeekInformationComponent,
+    MainLoginComponent
   ],
   imports: [
+    StudentModule,
+    LoginModule,
     BrowserModule,
     FormsModule,
     HttpModule,
     FlexLayoutModule,
     BrowserAnimationsModule,
-    StudentModule,
     MdTabsModule,
     MdCardModule,
     MdGridListModule,
     BrowserAnimationsModule,
     MdInputModule,
-    MdCheckboxModule
+    MdCheckboxModule,
+    MdButtonModule
+    
   ],
   providers: [],
-  entryComponents: [ WeekInformationComponent ],
+  entryComponents: [ WeekInformationComponent, MainLoginComponent ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
