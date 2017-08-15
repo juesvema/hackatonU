@@ -81,7 +81,7 @@ app.use(function (req, res, next) {
 
 app.use('/', routes);
 app.use('/users', users);
-app.use('/', products);
+app.use('/productos', products);
 app.use('/categorias', categorias);
 app.use('/bitacora', bitacora);
 

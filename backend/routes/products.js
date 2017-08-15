@@ -30,7 +30,7 @@ router.route("/productos")
 
 router.route("/productos/:id")
 .get(function(req,res) {
-	res.render("app/productos/show")
+	res.render("/productos/show")
 })
 .put( function (req, res) {
     Product.findById(req.params.id, function (err, product) {
@@ -51,7 +51,7 @@ router.route("/productos/:id")
 		}
 		else {
 			console.log(err);
-			res.redirect("/app/productos"+req.params.id);
+			res.redirect("/productos"+req.params.id);
 		}
 	});
 });
