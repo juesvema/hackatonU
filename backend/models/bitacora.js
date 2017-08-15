@@ -25,6 +25,12 @@ var Bitacora_schema = mongoose.Schema({
 	reflexion: {
 		type: String	
 	}
+	product_id: {
+		type: Schema.ObjectId, ref: "Product"	
+	}
+	user_id: {
+		type: Schema.ObjectId, ref: "User"		
+	}
 });
 
 var Bitacora = module.exports = mongoose.model('Bitacora', Bitacora_schema);
