@@ -1,4 +1,7 @@
 var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
+var Product = mongoose.model('Product');
+var User = mongoose.model('User');
 
 var Bitacora_schema = mongoose.Schema({
 	preparacion: {
@@ -24,12 +27,12 @@ var Bitacora_schema = mongoose.Schema({
 	},
 	reflexion: {
 		type: String	
-	}
+	},
 	product_id: {
-		type: Schema.ObjectId, ref: "Product"	
-	}
+		type: Schema.Types.ObjectId, ref: "Product"	
+	},
 	user_id: {
-		type: Schema.ObjectId, ref: "User"		
+		type: Schema.Types.ObjectId, ref: "User"		
 	}
 });
 
