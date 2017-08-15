@@ -11,12 +11,13 @@ var LocalStrategy = require('passport-local').Strategy;
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/loginapp');
+mongoose.connect('mongodb://localhost/hackatonU');
 var db = mongoose.connection;
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var categorias = require('./routes/categorias');
+var bitacora = require('./routes/bitacora');
 
 // Init App
 var app = express();
@@ -80,6 +81,7 @@ app.use(function (req, res, next) {
 app.use('/', routes);
 app.use('/users', users);
 app.use('/categorias', categorias);
+app.use('/bitacora', bitacora);
 
 // Set Port
 app.set('port', (process.env.PORT || 3000));
