@@ -40,9 +40,6 @@ router.route("/")
 	})
 
 router.route("/:id")
-	.get(function (req, res) {
-		res.render("/show")
-	})
 	.put(function (req, res) {
 		Product.findById(req.params.id, function (err, product) {
 			if (err) res.send(err);
