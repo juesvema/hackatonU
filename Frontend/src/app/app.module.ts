@@ -18,9 +18,6 @@ import { FlexLayoutModule } from "@angular/flex-layout";
   declarations: [
     AppComponent,
     WeekInformationComponent,
-    PresentationComponent,
-    InformationComponent,
-    ChoiceProductComponent    
   ],
   imports: [
     BrowserModule,
