@@ -1,8 +1,23 @@
 .card-steps {
-  margin: 10px;
+  margin: 20px;
+  padding-right: 50px;
 }
 
 .image-steps {
   width: 300;
   height: 300;
+  border-radius: 100px 200px;
+}
+
+.paragraph {
+  margin-right: 30px;
+  margin-left: 30px;
+  font-size: 17px;
+}
+
+.card-different {
+  padding-right: 40px;
+  padding-left: 50px;
+  margin: 20px;
+  padding-right: 50px;
 }
