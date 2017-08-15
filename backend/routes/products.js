@@ -5,10 +5,8 @@ var LocalStrategy = require('passport-local').Strategy;
 
 var Product = require('../models/product');
 
-
-
 // 
-router.route("/productos")
+router.route("/")
 .get(function(req,res) {
 	Product.find({},function(err,products) {
 		if (err) {res.redirect("/");return;}
