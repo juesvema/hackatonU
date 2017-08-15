@@ -6,15 +6,19 @@ var LocalStrategy = require('passport-local').Strategy;
 var Product = require('../models/product');
 var Categoria = require('../models/categorias');
 
+
+router.get("/new", function (req, res) {
+	Categoria.find({}, function (err, categorias) {
+		if (err) { res.redirect("/"); return; }
+		res.send(categorias)
+	});
+});
 // 
 router.route("/")
 	.get(function (req, res) {
 		Product.find({}, function (err, products) {
 			if (err) { res.redirect("/"); return; }
-			Categoria.find({}, function (err, categorias) {
-				if (err) { res.redirect("/"); return; }
-					res.send(products + categorias)
-			});
+			res.send(products)
 		});
 	})
 
