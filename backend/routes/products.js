@@ -45,6 +45,7 @@ router.route("/")
 	})
 
 router.route("/:id")
+	//Update register
 	.put(function (req, res) {
 		Product.findById(req.params.id, function (err, product) {
 			if (err) res.send(err);
