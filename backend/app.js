@@ -14,38 +14,38 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/hackatonHOU');
 var db = mongoose.connection;
 
-var routes = require('./routes/index');
-var users = require('./routes/users');
-var products = require('./routes/products');
-var categorias = require('./routes/categorias');
-var bitacora = require('./routes/bitacora');
+let routes = require('./routes/index')
+let users = require('./routes/users')
+let products = require('./routes/products')
+let categorias = require('./routes/categorias')
+let bitacora = require('./routes/bitacora')
 
 // Init App
-var app = express();
+var app = express()
 
 // View Engine
-app.set('views', path.join(__dirname, 'views'));
-app.engine('handlebars', exphbs({defaultLayout:'layout'}));
-app.set('view engine', 'handlebars');
+app.set('views', path.join(__dirname, 'views'))
+app.engine('handlebars', exphbs({defaultLayout:'layout'}))
+app.set('view engine', 'handlebars')
 
 // BodyParser Middleware
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(cookieParser());
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(cookieParser())
 
 // Set Static Folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')))
 
 // Express Session
 app.use(session({
     secret: 'secret',
     saveUninitialized: true,
     resave: true
-}));
+}))
 
 // Passport init
-app.use(passport.initialize());
-app.use(passport.session());
+app.use(passport.initialize())
+app.use(passport.session())
 
 // Express Validator
 app.use(expressValidator({
@@ -63,10 +63,10 @@ app.use(expressValidator({
       value : value
     };
   }
-}));
+}))
 
 // Connect Flash
-app.use(flash());
+app.use(flash())
 
 // Global Vars
 app.use(function (req, res, next) {
@@ -75,19 +75,18 @@ app.use(function (req, res, next) {
   res.locals.error = req.flash('error');
   res.locals.user = req.user || null;
   next();
-});
+})
 
 
-
-app.use('/', routes);
-app.use('/users', users);
-app.use('/productos', products);
-app.use('/categorias', categorias);
-app.use('/bitacora', bitacora);
+app.use('/', routes)
+app.use('/users', users) 
+app.use('/productos', products)
+app.use('/categorias', categorias)
+app.use('/bitacora', bitacora)
 
 // Set Port
 app.set('port', (process.env.PORT || 3000));
 
 app.listen(app.get('port'), function(){
 	console.log('Server started on port '+app.get('port'));
-});
+})

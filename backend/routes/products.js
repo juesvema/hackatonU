@@ -32,7 +32,7 @@ router.route("/")
 	})
 	//Create register
 	.post(function (req, res) {
-		var newProduct = new Product({
+		let newProduct = new Product({
 			title: req.body.title,
 			category_id: req.body.category_id
 		});
@@ -45,6 +45,7 @@ router.route("/")
 	})
 
 router.route("/:id")
+	//Update register
 	.put(function (req, res) {
 		Product.findById(req.params.id, function (err, product) {
 			if (err) res.send(err);
