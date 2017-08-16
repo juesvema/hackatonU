@@ -10,62 +10,30 @@
       </div>
       <div fxFlex>
           Selecciona producto: 
-          <md-select placeholder="Categoria 1">
+          <md-select placeholder="Producto 1">
             <md-option *ngFor="let product of products" [value]="product.id">
               {{ product.name }}
             </md-option>
           </md-select>  
       </div>
       <div fxFlex>
-          Selecciona producto: 
-          <md-select placeholder="Producto 1">
+          Selecciona categoria 2: 
+          <md-select placeholder="Categoria 2">
             <md-option *ngFor="let product of products" [value]="product.category_id">
               {{ product.title }}
             </md-option>
           </md-select> 
-      </div>
-      <div fxFlex>
-          Selecciona Categoria: 
-          <md-select placeholder="Categoria 2">
-            <md-option *ngFor="let categoria of categories" [value]="categoria.nombre">
-              {{ categoria.nombre }}
-            </md-option>
-          </md-select> 
-      </div>
-      <div fxFlex>
-          Selecciona producto: 
-          <md-select placeholder="Categoria 2">
-            <md-option *ngFor="let product of products" [value]="product.id">
-              {{ product.name }}
-            </md-option>
-          </md-select>  
       </div>
       <div fxFlex>
           Selecciona producto: 
           <md-select placeholder="Producto 2">
-            <md-option *ngFor="let product of products" [value]="product.category_id">
-              {{ product.title }}
-            </md-option>
-          </md-select> 
-      </div>
-      <div fxFlex>
-          Selecciona Categoria: 
-          <md-select placeholder="Categoria 3">
             <md-option *ngFor="let categoria of categories" [value]="categoria.nombre">
               {{ categoria.nombre }}
             </md-option>
-          </md-select>  
-      </div>
-      <div fxFlex>
-          Selecciona producto: 
-          <md-select placeholder="Producto 3">
-            <md-option *ngFor="let product of products" [value]="product.category_id">
-              {{ product.title }}
-            </md-option>
           </md-select> 
       </div>
       <div fxFlex>
-          Selecciona producto: 
+          Selecciona categoria: 
           <md-select placeholder="Categoria 3">
             <md-option *ngFor="let product of products" [value]="product.id">
               {{ product.name }}
@@ -73,10 +41,10 @@
           </md-select>  
       </div>
       <div fxFlex>
-          Selecciona producto: 
+          Selecciona producto 3: 
           <md-select placeholder="Producto 3">
-            <md-option *ngFor="let product of products" [value]="product.id">
-              {{ product.name }}
+            <md-option *ngFor="let product of products" [value]="product.category_id">
+              {{ product.title }}
             </md-option>
           </md-select> 
       </div>
