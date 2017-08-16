@@ -16,3 +16,7 @@ textarea, md-input-container {
 .eventos-climaticos {
     margin-top: 10px;
 }
+
+.button-save {
+    text-align: center;
+}

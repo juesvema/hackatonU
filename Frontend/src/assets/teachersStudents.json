@@ -1,0 +1,90 @@
+{
+  "teachers": [
+    {
+      "code": "2017T",
+      "password": "123qwe",
+      "name": "Andrés",
+      "lastName": "Giraldo",
+      "groups": [
+        "Teo001",
+        "Teo002"
+      ]
+    },
+    {
+      "code": "2016I",
+      "password": "123asd",
+      "name": "Harvey",
+      "lastName": "Gomez",
+      "groups": [
+        "Ing001"
+      ]
+    },
+    {
+      "code": "2016E",
+      "password": "123zxc",
+      "name": "Yesid",
+      "lastName": "Florez",
+      "groups": [
+        "Adm001",
+        "Con001"
+      ]
+    },
+    {
+      "code": "2017P",
+      "password": "123rty",
+      "name": "Esteban",
+      "lastName": "Velásquez",
+      "groups": [
+        "Mus001",
+        "Pre001"
+      ]
+    }
+  ],
+  "students": [
+    {
+      "id": "123",
+      "name": "David",
+      "group": "Ing001"
+    },
+    {
+      "id": "456",
+      "name": "Paola",
+      "group": "Pre001"
+    },
+    {
+      "id": "789",
+      "name": "John",
+      "group": "Teo001"
+    },
+    {
+      "id": "321",
+      "name": "Juan",
+      "group": "Teo002"
+    },
+    {
+      "id": "654",
+      "name": "Jhonatan",
+      "group": "Adm001"
+    },
+    {
+      "id": "987",
+      "name": "Saaibi",
+      "group": "Con001"
+    },
+    {
+      "id": "231",
+      "name": "Oscar",
+      "group": "Mus001"
+    },
+    {
+      "id": "564",
+      "name": "William",
+      "group": "Ing001"
+    },
+    {
+      "id": "897",
+      "name": "Yuli",
+      "group": "Con001"
+    }
+  ]
+}

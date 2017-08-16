@@ -1,7 +1,9 @@
 <div fxLayout="row" fxLayoutWrap>
-    <div *ngFor="let week of weeks; let index = index" fxFlex>
-        <button md-raised-button class="button-week" (click)="goWeek(index + 1)">
-            Semana {{index + 1}}
-        </button>
-    </div>
+    <md-grid-list cols="8" rowHeight="2:1">
+        <md-grid-tile *ngFor="let week of weeks; let index = index" fxFlex>
+            <button md-raised-button class="button-week" (click)="goWeek(index + 1)">
+                Semana {{index + 1}}
+            </button>
+        </md-grid-tile>
+    </md-grid-list>
 </div>

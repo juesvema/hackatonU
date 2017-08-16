@@ -2,13 +2,13 @@
 </div>
 
 <md-input-container  class="large-input">
-  <input mdInput placeholder="Usuario" value=""  class="large-input">
+  <input mdInput placeholder="Usuario" value="" [(ngModel)]="username" class="large-input">
 </md-input-container>
 
 <md-input-container class="large-input">
-  <input type="password" mdInput placeholder="Contraseña"   class="large-input">
+  <input type="password" mdInput placeholder="Contraseña"  [(ngModel)]="password"  class="large-input">
 </md-input-container>
 
 <div class="container-button">
-  <button md-raised-button>Click me!</button>
+  <button md-raised-button (click)="login()">Ingresar</button>
 </div>

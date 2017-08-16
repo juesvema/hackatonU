@@ -34,7 +34,8 @@ export class WeekInformationComponent implements OnInit {
   public fridayDesmalezado: boolean;
   public fridayAbono: boolean;
 
-  constructor(@Inject(MD_DIALOG_DATA) private data: number) {}
+  constructor(@Inject(MD_DIALOG_DATA) private data: number,
+              private dialogRef: MdDialogRef<WeekInformationComponent>) {}
 
   ngOnInit() {
     this.week = this.data;
@@ -64,5 +65,10 @@ export class WeekInformationComponent implements OnInit {
     this.fridayRiego = false;
     this.fridayDesmalezado = false;
     this.fridayAbono = false;
+  }
+
+  close() {
+    console.log('adfads');
+    this.dialogRef.close();
   }
 }

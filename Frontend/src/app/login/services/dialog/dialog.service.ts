@@ -1,3 +1,5 @@
+import { Observable } from 'rxjs/Observable';
+import { Http } from '@angular/http';
 import { MainLoginComponent } from './../../main-login/main-login.component';
 import { Injectable } from '@angular/core';
 import { MdDialog, MdDialogConfig } from '@angular/material';
@@ -5,11 +7,15 @@ import { MdDialog, MdDialogConfig } from '@angular/material';
 @Injectable()
 export class DialogService {
 
+   private teachers: object[];
+   private students: object[];
+
   /**
    * 
    * @param dialog MdDialog to open components in dialog
    */
-  constructor(public dialog: MdDialog) { }
+  constructor(public dialog: MdDialog,
+              public http: Http) { }
 
   /**
    * 
@@ -32,4 +38,7 @@ export class DialogService {
     return configuration;
   }
 
+  public login( username:string, password: string ) {
+    return this.http.get('assets/teachersStudents.json');
+  }
 }

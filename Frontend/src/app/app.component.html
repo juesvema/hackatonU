@@ -1,4 +1,4 @@
 <div class="container-all">
-    <!--<app-presentation></app-presentation>-->
-    <app-entry-login></app-entry-login>
+    <app-presentation *ngIf="isLogged"></app-presentation>
+    <app-entry-login *ngIf="!isLogged" (userUpdated)="isLogged = $event"></app-entry-login>
 </div>

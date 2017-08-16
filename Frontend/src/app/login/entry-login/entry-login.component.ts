@@ -1,5 +1,5 @@
 import { DialogService } from './../services/dialog/dialog.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter, OnInit } from '@angular/core';
 import { Response } from '@angular/http';
 
 @Component({
@@ -8,6 +8,8 @@ import { Response } from '@angular/http';
   styleUrls: ['./entry-login.component.css']
 })
 export class EntryLoginComponent implements OnInit {
+
+  @Output() userUpdated = new EventEmitter();
 
   constructor(private dialogService: DialogService) { }
 
@@ -21,7 +23,7 @@ export class EntryLoginComponent implements OnInit {
   public mainModal(){
     this.dialogService.openDialog().afterClosed().subscribe( (result: any) => {
       if (result) {
-        
+        this.userUpdated.emit(true);
       } else {
         this.mainModal();
       }
