@@ -21,6 +21,7 @@ router.route("/")
 })
 
 .post(function(req,res){
+    console.log(req)
 	var newBitacora = new Bitacora({
 		preparacion:  req.body.preparacion,
 		riego:req.body.riego,
@@ -30,7 +31,6 @@ router.route("/")
 		clima:  req.body.clima,
 		fotografias: req.body.fotografias,
 		reflexion: req.body.reflexion,
-		user_id : res.locals.user._id
 	});	
 	Bitacora.createBitacora(newBitacora, function(err, bitacora){
 		if(err) throw err;
@@ -51,7 +51,6 @@ router.route('/:_id')
         if (req.body.clima) user.clima = req.body.clima;
         if (req.body.fotografias) user.fotografias = req.body.fotografias;
         if (req.body.reflexion) user.reflexion = req.body.reflexion;
-        if (req.body.user_id) user.user_id = req.body.user_id;
 
         user.save( function (err){
             if (err) send (err);
