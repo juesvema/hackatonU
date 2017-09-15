@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Eventos</string>
+    <string name="hint_username">Usuario</string>
+    <string name="btn_login">Login</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="hint_rol">Rol: Admin o User</string>
+    <string name="imagen">Imagen</string>
+    <string name="nombre">Nombre</string>
+    <string name="tipo">Tipo</string>
+    <string name="fecha">Fecha</string>
+    <string name="hora">Hora</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="lugar">Lugar</string>
+    <string name="encargado">Encargado</string>
+    <string name="requisitos">Requisitos</string>
+    <string name="btn_accept">Guardar Evento</string>
+
+    <string-array name="rol_array">
+        <item>Admin</item>
+        <item>User</item>
+    </string-array>
+
+    <string-array name="tipos_array">
+        <item>Culturales</item>
+        <item>Gastronómicos</item>
+        <item>Empresariales</item>
+        <item>Sociales</item>
+        <item>Deportivos</item>
+        <item>Academicos </item>
+        <item>Religiosos </item>
+    </string-array>
+</resources>

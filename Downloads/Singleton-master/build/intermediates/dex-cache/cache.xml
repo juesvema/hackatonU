@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\1b036eedd7f840b68c274b472fb25b1ca2067aae\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ec75036c3c52e451d0cde50a5aedaf5fd32354a0">
+        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0047639290813bde009c91f033e19f781fdafdba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_8b571364c1229a5ecc4fef863acb773b0c466b91\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\4e82324018287e8dc98fd31669b2eb40747951fe\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_78bcd9e6e1fd8e02019368e15ad828ffb503fc71\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ad6a97f0225c4f195b09369d46ad6023cb4a9148">
+        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_f215c1cc13d9df550294bbccfcf455ca9213afe5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\AppData\Local\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_888dc6c70591458ee998c2926f41c5e65a528d54\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\4e82324018287e8dc98fd31669b2eb40747951fe\output\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_a6d3e315158d98ee740d478d65b86e8d00f0ec60\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\8cb817ddba74bd73fe82fd104b8fdf070a083cea\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2e9c5c3b34e05ca305232e8ae91977591d1923c4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_e6467073f73fdc3ae86cdebb9c172f52a6468c04\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\ed7dbcea6038883c5b443c8c7b658e97db63898a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="C:\Users\User\Downloads\Singleton-master\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d3abb9a81dfc0ce2ed6d840865d2969c5f15c99c\classes.dex" />
+    </item>
+
+</items>
